@@ -7,7 +7,7 @@
 			class="org.mahikero01.repository.HibernateCustomerRepositoryImpl"></bean>
 			
 	<bean name="customerService"
-			class="org.mahikero01.service.CustomerServiceImpl" autowire="byType">
+			class="org.mahikero01.service.CustomerServiceImpl" autowire="byType" scope="singleton">
 		<!--  <constructor-arg index="0" ref="customerRepository" /> -->
 	</bean>	
 
